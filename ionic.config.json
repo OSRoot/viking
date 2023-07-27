@@ -1,0 +1,7 @@
+{
+  "name": "viking",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
