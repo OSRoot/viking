@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">viking</string>
+    <string name="title_activity_main">viking</string>
+    <string name="package_name">com.viking.burgers</string>
+    <string name="custom_url_scheme">com.viking.burgers</string>
+</resources>

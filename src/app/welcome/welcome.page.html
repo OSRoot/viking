@@ -1,0 +1,58 @@
+<!-- <ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/home" routerDirection="back">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Welcome</ion-title>
+  </ion-toolbar>
+</ion-header> -->
+
+<ion-content>
+  <div class="upper-part">
+    <ion-img src="../../assets/logo/logo@2x.png"></ion-img>
+    <h1>فايكنج برجر</h1>
+    <h4>من أجل البرجر نقاتل</h4>
+  </div>
+  <div class="middle-part">
+    <div>
+      <h2>المحافظة</h2>
+    </div>
+    <div class="gov-btns">
+      <div>
+        <h3>بغداد</h3>
+        <ion-img src="../../assets/icons/check.svg"></ion-img>
+      </div>
+      <div>
+        <h3>باقي المحافظات</h3>
+      </div>
+    </div>
+
+    <div class="location">
+      <ion-img src="../../assets/icons/MAP.svg"></ion-img>
+      <h3>حدد الفرع</h3>
+    </div>
+
+    <div class="branches">
+      <div
+        class="branch"
+        (click)="isClicked(i)"
+        *ngFor="let branch of branches; let i = index"
+      >
+        <div>
+          <h4>{{branch}}</h4>
+        </div>
+        <ion-img
+          *ngIf="selectedBranches.includes(i)"
+          src="../../assets/icons/check_orange.svg"
+        ></ion-img>
+      </div>
+    </div>
+  </div>
+</ion-content>
+<ion-footer>
+  <div routerLink="/all-food">
+    <h2>الدخول</h2>
+  </div>
+</ion-footer>

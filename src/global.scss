@@ -24,3 +24,30 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+// Font Family
+@font-face {
+    font-family: 'Din Next LT Arabic';
+    src: url('./assets/fonts/DINNextLTArabic-Regular-3.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Din Next LT Arabic';
+    src: url('./assets/fonts/DINNextLTArabic-Bold-4.ttf') format('truetype');
+    font-weight: 700;
+}
+
+body,
+* {
+    font-family: 'Din Next LT Arabic', sans-serif;
+}
+
+// EOF
+
+
+
+// Main Button 
+ion-button {
+    --background: #EF792D;
+}
