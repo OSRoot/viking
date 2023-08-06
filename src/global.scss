@@ -41,13 +41,39 @@
 body,
 * {
     font-family: 'Din Next LT Arabic', sans-serif;
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box !important;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+
 // EOF
+.no-ripple:active {
+    --ripple-color: transparent;
+}
 
 
 
-// Main Button 
-ion-button {
-    --background: #EF792D;
+
+ion-content {
+    direction: rtl !important;
+
+}
+
+ion-header {
+    direction: rtl !important;
+    padding: 16px;
+
 }

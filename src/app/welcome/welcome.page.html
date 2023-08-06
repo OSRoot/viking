@@ -9,7 +9,7 @@
   </ion-toolbar>
 </ion-header> -->
 
-<ion-content>
+<ion-content mode="ios">
   <div class="upper-part">
     <ion-img src="../../assets/logo/logo@2x.png"></ion-img>
     <h1>فايكنج برجر</h1>
@@ -17,7 +17,7 @@
   </div>
   <div class="middle-part">
     <div>
-      <h2>المحافظة</h2>
+      <h2 class="ion-margin-bottom">المحافظة</h2>
     </div>
     <div class="gov-btns">
       <div>
@@ -37,22 +37,29 @@
     <div class="branches">
       <div
         class="branch"
-        (click)="isClicked(i)"
-        *ngFor="let branch of branches; let i = index"
+        *ngFor="let branch of branches ; let i=index"
+        [class.active_branch]="clickedIndex === i||0"
+        (click)="clickedIndex = i"
       >
-        <div>
-          <h4>{{branch}}</h4>
-        </div>
-        <ion-img
-          *ngIf="selectedBranches.includes(i)"
-          src="../../assets/icons/check_orange.svg"
-        ></ion-img>
+        <ion-item lines="none">
+          <label>
+            {{branch}}
+
+            <input
+              (change)="branch_changed($event)"
+              [value]="branch"
+              type="radio"
+              name="branch"
+              style="display: none"
+            />
+          </label>
+        </ion-item>
       </div>
     </div>
   </div>
 </ion-content>
 <ion-footer>
-  <div routerLink="/all-food">
+  <div (click)="navigate()" mode="ios" routerDirection="back">
     <h2>الدخول</h2>
   </div>
 </ion-footer>

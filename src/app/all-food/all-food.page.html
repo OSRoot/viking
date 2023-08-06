@@ -1,7 +1,28 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Food You like</ion-title>
-  </ion-toolbar>
+<ion-header class="ion-no-border ion-padding" mode="ios">
+  <div class="toolbar">
+    <div class="logo">
+      <ion-img src="../../assets/logo/logo@2x.png"></ion-img>
+    </div>
+
+    <div class="branch-modal" routerLink="/welcome" routerDirection="forward">
+      <h2>الفرع</h2>
+      <p>
+        {{ selectedBranchAddress | slice:0:30 }}..
+        <ion-img src="../../assets/icons/down.svg"></ion-img>
+      </p>
+      <ion-modal>
+        <ion-header>
+          <ion-toolbar>
+            <ion-title>Tilte</ion-title>
+          </ion-toolbar>
+        </ion-header>
+      </ion-modal>
+    </div>
+    <ion-img
+      routerLink="/menu"
+      src="../../assets/icons/slide_menue.svg"
+    ></ion-img>
+  </div>
 </ion-header>
 
 <ion-content> </ion-content>

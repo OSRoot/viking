@@ -7,14 +7,17 @@ import { IonicModule } from '@ionic/angular';
 import { AllFoodPageRoutingModule } from './all-food-routing.module';
 
 import { AllFoodPage } from './all-food.page';
+import { ModalTestPage } from '../modal-test/modal-test.page';
+import { ModalTestPageModule } from '../modal-test/modal-test.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AllFoodPageRoutingModule
+    AllFoodPageRoutingModule,
+    ModalTestPageModule
   ],
   declarations: [AllFoodPage]
 })
-export class AllFoodPageModule {}
+export class AllFoodPageModule { }

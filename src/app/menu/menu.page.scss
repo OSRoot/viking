@@ -1,0 +1,195 @@
+ion-header {
+    direction: rtl;
+
+    .toolbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    ion-buttons {
+
+        ion-button {
+            height: 100%;
+            width: fit-content;
+
+            &:active {
+                border: none !important;
+                outline: none !important;
+                --background-activated: none;
+
+            }
+
+            &:focus {
+                border: none !important;
+                outline: none !important;
+                --background-focused: none;
+
+            }
+        }
+
+        &:focus {
+            border: none !important;
+            outline: none !important;
+        }
+
+        &:active {
+            border: none !important;
+            outline: none !important;
+        }
+    }
+}
+
+ion-content {
+
+    // direction: rtl;
+    ion-img {
+        width: 24px;
+        height: 24px;
+
+        &:active {
+            border: none;
+            outline: none;
+        }
+
+        &:focus {
+            border: none !important;
+            outline: none !important;
+        }
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            background-color: #F6F6F6;
+            border-radius: 8px;
+            padding: 14px;
+
+            &:active {
+                background-color: #e0d9d4;
+                border: none !important;
+                outline: none !important;
+            }
+
+            &:focus {
+                border: none !important;
+                outline: none !important;
+            }
+
+            span {
+                width: 34px;
+                height: 28px;
+                text-align: center;
+                line-height: 12px;
+                border-radius: 8px;
+                background: #fff;
+                display: inline-block;
+                padding: 7px 8px 5px 8px;
+            }
+
+            div {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 16px;
+            }
+        }
+    }
+
+    .contact-info {
+        ion-button {
+            display: flex;
+            align-items: center;
+            margin-top: 16px;
+            // padding: 10px 0;
+            --background: #1AB844;
+            --background-activated: transparent !important;
+
+            &:active {
+                --background: #097c28;
+
+            }
+
+            ion-img {
+                margin-left: 16px;
+
+                &:focus {
+                    border: none !important;
+                    outline: none !important;
+                }
+            }
+        }
+
+        h2 {
+            margin: 24px 0;
+            font-size: 14px;
+        }
+
+        .medias {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .media-facebook {
+                background-color: rgba(0, 94, 153, 16%);
+
+                h3 {
+                    color: #0066A4;
+                }
+            }
+
+            .media-telegram {
+                background-color: rgba(3, 155, 229, 16%);
+
+                h3 {
+                    color: #039BE5;
+                }
+            }
+
+            .media-insta {
+                background-color: rgba(218, 0, 171, 16%);
+
+                h3 {
+                    color: #DA00AB;
+                }
+            }
+
+            div {
+                display: flex;
+                align-items: center;
+                border-radius: 12px;
+
+                padding: 16px;
+                gap: 8px;
+
+                h3 {
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+
+}
+
+ion-footer {
+    .company {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h3 {
+            font-size: 14px;
+        }
+
+        span {
+            font-size: 14px;
+            color: #2286A1
+        }
+    }
+}

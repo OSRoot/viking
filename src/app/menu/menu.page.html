@@ -1,0 +1,60 @@
+<ion-header class="ion-no-border">
+  <div class="toolbar">
+    <h2 class="">القائمة</h2>
+    <ion-img
+      routerLink="/all-food"
+      routerDirection="back"
+      src="../../assets/icons/cancell.svg"
+    ></ion-img>
+  </div>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="menu">
+    <div
+      class="menu-item"
+      *ngFor="let item of menu"
+      [routerLink]="item.route"
+      routerDirection="back"
+    >
+      <div>
+        <ion-img [src]="item.icon"></ion-img>
+        <h3>{{item.title}}</h3>
+      </div>
+      <span *ngIf="item.count!==undefined||null">{{item.count}}</span>
+    </div>
+  </div>
+
+  <div class="contact-info">
+    <h2>تواصل معنا</h2>
+    <div class="medias">
+      <div class="media-facebook">
+        <ion-img src="../../assets/icons/facebook/facebook@2x.png"></ion-img>
+        <h3>فيس بوك</h3>
+      </div>
+
+      <div class="media-telegram">
+        <ion-img src="../../assets/icons/telegram/telegram@2x.png"></ion-img>
+        <h3>تلقرام</h3>
+      </div>
+
+      <div class="media-insta">
+        <ion-img src="../../assets/icons/instagram/instagram@2x.png"></ion-img>
+        <h3>انستقرام</h3>
+      </div>
+    </div>
+
+    <ion-button expand="block" mode="ios">
+      <ion-img src="../../assets/icons/call2/call2@2x.png"></ion-img>
+      الدعم الفني</ion-button
+    >
+  </div>
+</ion-content>
+
+<ion-footer class="ion-no-border ion-margin-bottom">
+  <div class="company">
+    <img src="../../assets/icons/logo_iraqsoft/logo_iraqsoft@3x.png" alt="" />
+    <h3>تم البرمجة والتصميم بواسطة</h3>
+    <span>عراق سوفت</span>
+  </div>
+</ion-footer>

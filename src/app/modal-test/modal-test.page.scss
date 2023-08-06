@@ -1,0 +1,183 @@
+ion-content {
+    --padding-top: 20px;
+
+    .upper-part {
+
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 0;
+
+        ion-img {
+            width: 150px;
+            padding-bottom: 10px;
+
+        }
+
+        h1 {
+            padding-top: 0;
+            font-weight: 700;
+            color: #EF792D;
+            margin: 0;
+            padding: 0;
+            font-size: 24px;
+
+        }
+
+        h4 {
+            font-size: 16px;
+            color: #1C1A19;
+            padding-bottom: 15px;
+
+        }
+    }
+
+    .middle-part {
+        .gov-btns {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+
+            div:nth-child(1) {
+                color: #fff;
+                background: #EF792D;
+                border: 1px solid #EF792D;
+
+                &:active {
+                    background-color: #c06020;
+                }
+            }
+
+            div:nth-child(2) {
+                color: #1C1A19;
+                background: #fff;
+                border: 1px solid #D9D9D9;
+
+                &:active {
+                    background-color: #D9D9D9;
+                }
+            }
+
+            div {
+
+
+                ion-img {
+                    width: 24px;
+                    margin: 10px;
+                }
+
+                h3 {
+                    // padding: 0;
+                    margin: 20px;
+                    padding-bottom: 7px;
+                    // margin-bottom: px;
+                    font-size: 16px;
+                    // font-weight: 510;
+                }
+
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 50px;
+                width: 46%;
+                border-radius: 8px;
+            }
+        }
+
+        direction: rtl;
+
+        h2 {
+            font-size: 16px;
+            font-weight: 600;
+            padding-right: 10px;
+        }
+
+        .location {
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin: 15px;
+
+            h3 {
+                padding: 0 10px;
+                margin: 0;
+                margin-bottom: 7px;
+            }
+        }
+
+        .branches {
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            // align-items: center;
+            gap: 15px;
+
+            .branch {
+                // background-color: #EF792D;
+                border: 1px solid #D9D9D9;
+                border-radius: 15px;
+                width: 90%;
+                margin: auto;
+
+                ion-item {
+                    padding: 12px;
+                    width: 100%;
+                    --background: transparent;
+
+                    label {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+
+                        input {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+.active_branch {
+    color: #EF792D;
+    border: 1px solid #EF792D !important;
+
+    // background-color: red !important;
+    background: url('../../assets/icons/check_orange.svg') no-repeat 10px center;
+}
+
+ion-footer {
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        background: #EF792D;
+        color: #fff;
+        border-radius: 8px;
+
+        height: 60px;
+
+        &:active {
+            background-color: #c06020;
+        }
+
+        h2 {
+            padding: 0;
+            margin: 0;
+            font-size: 14px;
+        }
+
+    }
+}
